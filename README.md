@@ -1,11 +1,12 @@
 # level1_semantictextsimilarity_nlp-level1-nlp-06
 
-## Wrapup Report
+## Wrap up Report
 Please Click [here](https://www.notion.so/NLP-Wrap-up-Report-49002b7186304491a7954e0d4e7ae309) for more details!
+
+## [NLP] Competition Summary
 
 <img src="https://user-images.githubusercontent.com/97590480/205296373-f04d2ba4-6232-457d-8b2e-4bcbafa1a353.png">
 
-## [NLP] Competition Summary
 Thie competition is two sentence classification for STS(Semantic Text Similairy). STS deals with scoring for how similar the two sentences are semantically.
 
 ___
@@ -25,14 +26,14 @@ ___
 ___
 
 ### train
-add command `config.yaml` **file name** in configs directory
+add command `config.yaml` **file name** in configs directory. We provide three config files(koelectra_GRU(3), T5_encoder_GRU(3), T5).
 ```
-python3 train.py --config T5
+python3 train.py --config koelectra_GRU3
 ```
 
 ### Inference
 ```
-python3 test.py --config T5
+python3 test.py --config koelectra_GRU3
 ```
 
 ### Result
