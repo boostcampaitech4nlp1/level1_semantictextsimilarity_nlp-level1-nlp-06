@@ -1,0 +1,11 @@
+numpy
+pandas
+tqdm
+transformers
+torch
+pytorch-lightning
+torchmetrics
+wandb
+omegaconf
+einops
+sentencepiece

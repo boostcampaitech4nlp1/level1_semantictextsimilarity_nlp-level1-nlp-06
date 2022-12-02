@@ -1,0 +1,31 @@
+wandb:
+    entity: naver-inapp
+    project: final_organization
+    group: ensemble
+    name: t5-large_encoder-KETI-AIR GRU(3, bi-lstm) HuberLoss
+
+data:
+    train_path: data/train.csv
+    dev_path: data/dev.csv
+    test_path: data/test.csv
+    shuffle: True
+    
+model:
+    model_name : monologg/koelectra-base-v3-discriminator
+    data_class : CompDataset
+    model_class : PLMRNNModel
+    trainer: Trainer
+    saved_name: electra_GRU(3)
+    loss : Huber_loss
+    metric : pearson_correlation
+    optimizer : optim_AdamW
+    dropout_rate : 0.2
+
+train:
+    seed: 2022
+    gpus: 1
+    batch_size: 128
+    max_epoch: 10
+    learning_rate: 5e-5
+    logging_step: 1
+    max_length : 170
