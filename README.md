@@ -21,9 +21,9 @@ ___
 
 <img src="https://user-images.githubusercontent.com/97590480/205296028-741f9042-187a-40e8-a774-a024864c0b9c.png">
 
-## How to run
-
 ___
+
+## How to run
 
 ### train
 add command `config.yaml` **file name** in configs directory. We provide three config files(koelectra_GRU(3), T5_encoder_GRU(3), T5).
@@ -35,6 +35,8 @@ python3 train.py --config koelectra_GRU3
 ```
 python3 test.py --config koelectra_GRU3
 ```
+
+___
 
 ### Result
 
